@@ -3,8 +3,8 @@ $(document).ready ->
     $('.sub').slideDown()
     $(@).addClass('active')
 
-  $('nav').mouseleave ->
+  $('header nav').mouseleave ->
     setTimeout ->
       $('.sub').slideUp()
       $('.our-tours').removeClass('active')
-    , 1000
+    , 400
