@@ -53,8 +53,9 @@ header {
 }
 
 header nav {
-	margin: 55px auto 30px;
+	margin: 55px auto 10px;
 	text-align: center;
+	position: relative;
 }
 
 header nav ul {
@@ -80,6 +81,33 @@ header nav ul a {
 	display: inline-block;
 	text-decoration: none;
 	color: #000;
+}
+
+header nav ul a:hover, header nav ul a:active, header nav ul a:focus, header nav ul a.active {
+	color: #4e7544;
+}
+
+header nav .sub {
+	background: rgba(78, 117, 68, 0.84);
+	position: absolute;
+	top: 43px;
+	text-align: center;
+	width: 100%;
+	display: none;
+	z-index: 20;
+	padding: 10px 0 4px;
+}
+
+header nav .sub ul {
+	display: inline-block;
+}
+
+header nav .sub a {
+	color: #ccc;
+}
+
+header nav .sub a.active, header nav .sub a:active, header nav .sub a:hover, header nav .sub a:focus {
+	color: #fff;
 }
 
 main[role="main"] > section {
@@ -124,6 +152,14 @@ main[role="main"] > section {
 	font-size: 0.5em;
 	font-weight: normal;
 	text-decoration: none;
+}
+
+.btn:active, .btn:hover, .btn:focus {
+	background: #ccc;
+}
+
+.selector a:active i, .selector a:hover i, .selector a:focus i {
+	color: #fff;
 }
 
 .carousel .btn:after {
