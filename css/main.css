@@ -95,7 +95,7 @@ header nav ul a.active {
 }
 
 header nav .sub {
-	background: rgba(78, 117, 68, 0.84);
+	background: #edecea;
 	position: absolute;
 	top: 43px;
 	text-align: center;
@@ -103,6 +103,7 @@ header nav .sub {
 	display: none;
 	z-index: 20;
 	padding: 10px 0 4px;
+	border-top: 1px solid #4e7544;
 }
 
 header nav:hover .sub {
@@ -113,14 +114,14 @@ header nav .sub ul {
 }
 
 header nav .sub a {
-	color: #ccc;
+	color: #000;
 }
 
 header nav .sub a.active,
 header nav .sub a:active,
 header nav .sub a:hover,
 header nav .sub a:focus {
-	color: #fff;
+	color: #4e7544;
 }
 
 main[role="main"] > section {
