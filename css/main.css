@@ -385,6 +385,26 @@ footer section.copyright {
   font-size: 0.7em;
 }
 
+footer .contact-us h3 {
+	margin-top: 0;
+}
+
+footer .contact-us div {
+	width: 50%;
+	float: left;
+	font-size: 0.8em;
+}
+
+footer .contact-us div:first-child {
+	border-right: 1px solid #ccc;
+}
+
+footer .contact-us ul {
+	margin-top: 3em;
+	padding-left: 0;
+	list-style: none;
+}
+
 .social {
   text-align: center;
   font-size: 3em;
