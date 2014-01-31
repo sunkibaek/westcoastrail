@@ -5,12 +5,20 @@
       $('.sub').slideDown();
       return $(this).addClass('active');
     });
-    return $('header nav').mouseleave(function() {
+    $('header nav').mouseleave(function() {
       return setTimeout(function() {
         $('.sub').slideUp();
         return $('.our-tours').removeClass('active');
       }, 400);
     });
+    $('.controls .btn').click(function(e) {
+      e.preventDefault();
+      $('.controls .btn').removeClass('active');
+      $(this).addClass('active');
+      return $('#trip-type').attr('value', $(this).data('value'));
+    });
+    $('#depature, #return').datepicker();
+    return $('#depature, #return').datepicker('option', 'dateFormat', 'yy-mm-dd');
   });
 
 }).call(this);

@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <title>West Coast Rail Tours</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 </head>
 <body>
 <div id="phone" class="pull-right">
-  <p>T: 1.604.555.5555</p>
+  <p>Toll Free # 1.800.722.1233</p>
 </div>
 <div class="triangle pull-right"></div>
 
@@ -50,47 +51,85 @@
       </div>
     </div>
     <div class="quick-form">
-      PLAN YOUR TRIP
-      <a href="#">ROUND TRIP</a>
-      <a href="#">ONE WAY</a>
-      <a href="#">MULTI-CITY</a>
-      FROM
-      <input type="text">
-      TO
-      <input type="text">
-      DEPATURE
-      <input type="date">
-      RETURN
-      <input type="date">
-      ADULTS
-      <select>
-        <option>0</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-      </select>
-      CHILDREN
-      <select>
-        <option>0</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-      </select>
-      <input type="submit" value="GET A QUOTE">
+      <div class="controls bar">
+        <span class="or">or</span>
+        <span class="highlight">PLAN</span>
+        <span class="highlight">YOUR</span>
+        <span class="highlight">OWN</span>
+        <span class="highlight">TRIP</span>
+      </div>
+      <div class="controls left-space">
+        <a href="#" class="btn active" data-value="round_trip">ROUND TRIP</a><br>
+        <a href="#" class="btn" data-value="one_way">ONE WAY</a><br>
+        <a href="#" class="btn" data-value="multi_city">MULTI-CITY</a>
+        <input type="hidden" name="trip-type" id="trip-type" value="round_trip">
+      </div>
+      <div class="controls">
+        <label for="from">FROM</label><br>
+        <input type="text" id="from" name="from" placeholder="Vancouver">
+      </div>
+      <div class="controls">
+        <label for="to">TO</label><br>
+        <input type="text" id="to" name="to" placeholder="Whistler">
+      </div>
+      <div class="controls">
+        <label for="depature">DEPATURE</label><br>
+        <input type="text" id="depature" name="depature" placeholder="2014-01-31">
+      </div>
+      <div class="controls">
+        <label for="return">RETURN</label><br>
+        <input type="text" id="return" name="return" placeholder="2014-02-03">
+      </div>
+      <div class="controls">
+        <label for="adults">ADULTS</label><br>
+        <select id="adults" name="adults">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="controls">
+        <label for="seniors">SENIORS</label><br>
+        <select id="seniors" name="seniors">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="controls">
+        <label for="children">CHILDREN</label><br>
+        <select id="children" name="children">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <button href="#" class="btn submit">GET A<br>QUOTE</button>
+      <div class="clear-fix"></div>
     </div>
   </section>
 
@@ -162,6 +201,7 @@
 </footer>
 
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
