@@ -1,13 +1,16 @@
 $(document).ready ->
-  $('.our-tours, .sub').mouseenter ->
-    $('.sub').slideDown()
-    $(@).addClass('active')
+  if window.location.href.indexOf('usa_tours') < 0
+    $('.our-tours, .sub').mouseenter ->
+      $('.sub').slideDown()
+      $(@).addClass('active')
 
-  $('header nav').mouseleave ->
-    setTimeout ->
-      $('.sub').slideUp()
-      $('.our-tours').removeClass('active')
-    , 400
+    $('header nav').mouseleave ->
+      setTimeout ->
+        $('.sub').slideUp()
+        $('.our-tours').removeClass('active')
+      , 400
+  else
+    $('.sub').slideDown()
 
   $('.controls .btn').click (e) ->
     e.preventDefault()
@@ -17,3 +20,4 @@ $(document).ready ->
 
   $('#depature, #return').datepicker()
   $('#depature, #return').datepicker('option', 'dateFormat', 'yy-mm-dd')
+

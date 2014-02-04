@@ -17,6 +17,14 @@ BLACK:        000;            section text
 BLACK w/ opacity: rgba(0, 0, 0, 0.38);    carousel overlay
 GREY:         a4a4a4;           gallery arrow, button shadow
 
+SIZES =================================================
+body width: 1120px;
+base font size: 100% = 16px;
+1em = 16px
+2em = 32px
+3em = 96px
+base padding (sides)
+
 */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700|Dancing+Script:700);
@@ -39,6 +47,16 @@ body {
 header, main[role="main"], .wrapper {
   margin: 0 auto;
   width: 1120px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  margin-top: 3em;
+  margin-left: 28px;
+  font-size: 1.8em;
 }
 
 header {
@@ -425,8 +443,114 @@ footer .contact-us ul {
   margin-right: 0;
 }
 
-/*  FUNCTIONS  */
+/*  STYLES FOR TOUR PAGE  */
+ul.tour-buttons {
+  list-style: none;
+  padding: 0;
+}
 
+ul.tour-buttons a {
+  background: #9cc24e;
+  color: #fff;
+  text-decoration: none;
+  float: left;
+  display: block;
+  width: 253px;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.2;
+  min-height: 5.4em;
+}
+
+ul.tour-buttons a.active,
+ul.tour-buttons a:active,
+ul.tour-buttons a:hover,
+ul.tour-buttons a:focus {
+  background: #4e7544;
+}
+
+ul.tour-buttons li + li a {
+  margin-left: 36px;
+}
+
+.tour-single {
+  background: #fff;
+  border: 2px dashed #333;
+  padding: 70px;
+  margin-top: 4em;
+}
+
+.tour-single h2 {
+  background: #333;
+  color: #fff;
+  padding: 1em;
+  margin: -72px -72px 0 0;
+}
+
+.tour-single .triangle {
+  border-color: transparent transparent #333 transparent;
+  margin: -72px 0 0 0;
+  border-width: 0 0 5.25em 2em;
+}
+
+.tour-single p {
+  color: #333;
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+
+.tour-single a {
+  color: #4e7544;
+}
+
+.tour-single blockquote {
+  color: #333;
+  display: block;
+  padding: 20px 40px;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.tour-single blockquote:before {
+  content:"\"";
+  font-size: 10em;
+  line-height: 0;
+  color: #ccc;
+  margin-bottom: -5em;
+}
+
+.tour-single blockquote .author {
+  float: right;
+  display: block;
+  text-align: right;
+}
+
+.tour-single blockquote .author:before {
+  display: inline-block;
+  content: "-\00a0";
+}
+
+img.feature {
+  float: left;
+  margin-right: 45px;
+}
+
+.image-slider {
+  display: block;
+  float: left;
+  margin-top: 3em;
+}
+
+.image-slider img {
+  float: left;
+}
+
+.image-slider img + img {
+  margin-left: 45.333333px;
+}
+
+/*  FUNCTIONS  */
 .clear-fix:after {
   display: block;
   clear: both;
