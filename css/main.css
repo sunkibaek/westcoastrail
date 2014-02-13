@@ -583,3 +583,58 @@ img.feature {
 .pull-right {
   float: right;
 }
+
+
+/* --------- Train Travel ------------ */
+
+.page-title{
+	margin-left: -70px;
+}
+
+.page-title h1{
+	background-color: #333;
+	color: white;
+	padding: 0.5em 2em;
+	margin-top: -35px;
+	margin-left: 0;
+}
+
+.page-title .triangle{
+	border-color: transparent transparent #333 transparent;
+	margin: -35px 0 0 0;
+	border-width: 0 2em 4.5em 0;
+}
+
+.content-border{
+	margin-top: 150px;
+  	background: #fff;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 6em;
+  	/*border: 1px dashed #333;*/
+}
+
+.description{
+	padding-bottom: 2em;
+}
+
+.description:nth-of-type(1){
+	padding-top: 3em;
+}
+
+.banner-image{
+	width: 1120px;
+	height: 375px;
+	margin-left: 0;
+	margin-top:-56px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-train{
+	background-image: url(../images/train_travel_banner.jpg);
+}
+
+.bg-about{
+	background-image: url(../images/about_us_banner.jpg);
+}
